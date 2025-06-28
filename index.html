@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>lexnco</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Consulting
+  * Template URL: https://bootstrapmade.com/bootstrap-consulting-website-template/
+  * Updated: May 01 2025 with Bootstrap v5.3.5
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename">LEXNCO</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Practice Areas">Practice Areas</a></li>
+          <li><a href="#why-choose-us">Why Choose Us</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#contact">contact us</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+              <h2>Strategic Solutions for Business Growth</h2>
+              <img class=" md:hidden img-fluid mb-5 rounded-lg " src="assets/img/hero2-main-img.png" alt="">
+              <p class="hidden md:flex">At Lexnco.law, we believe that every client deserves clear, strategic, and reliable legal support. Our team is committed to delivering practical solutions with integrity, professionalism, and a deep understanding of the law.</p>
+              <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary">contact us</a>
+                <a href="#Practice Areas" class="btn btn-outline">Our Services</a>
+              </div>
+              <div class="hero-stats">
+                <!-- <div class="stat-item">
+                  <h3><span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>+</h3>
+                  <p>Years Experience</p>
+                </div> -->
+                <div class="stat-item">
+                  <h3><span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1" class="purecounter"></span>+</h3>
+                  <p>Clients Worldwide</p>
+                </div>
+                <div class="stat-item">
+                  <h3><span data-purecounter-start="0" data-purecounter-end="98" data-purecounter-duration="1" class="purecounter"></span>%</h3>
+                  <p>Success Rate</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
+              <img src="assets/img/hero2-main-img.png" alt="Consulting Services" class="img-fluid hidden md:flex">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Hero Section -->
+    
+<!-- WhatsApp Floating Button -->
+<a
+  href="https://wa.me/917907991009"
+  class="whatsapp-float animate-bounce"
+  target="_blank"
+  aria-label="Chat on WhatsApp"
+>
+  <img
+    src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+    alt="WhatsApp"
+    class="w-12 h-12"
+  />
+</a>
+
+<!-- Style -->
+<style>
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    background-color: white;
+    border-radius: 50%;
+    padding: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    animation: bounce 1.5s infinite;
+  }
+
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+  }
+
+  .whatsapp-float img {
+    width: 48px;
+    height: 48px;
+  }
+</style>
+
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="200">
+            <div class="about-image">
+              <img src="assets/img/lex.jpg" alt="About Our Consulting Firm" class="img-fluid main-image">
+              <div class="experience-badge">
+                <span class="years">5+</span>
+                <span class="text">Years of Experience</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="about-content">
+              <h2>We leverage our deep legal knowledge.</h2>
+              <p class="lead">Leveraging deep legal knowledge allows businesses to transform risk management into strategic opportunity</p>
+              <p> integrating legal expertise early in decision-making—from contract negotiations to regulatory compliance and intellectual property protection—companies can preempt costly disputes, accelerate transactions, and secure favorable terms</p>
+
+              <div class="row features-row">
+                <div class="col-md-6">
+                  <div class="feature-item">
+                    <div class="icon">
+                      <i class="bi bi-graph-up-arrow"></i>
+                    </div>
+                    <h4>Business Growth</h4>
+                    <p>we plays a critical role in business growth by offering strategic legal guidance that reduces risks and unlocks opportunities. </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="feature-item">
+                    <div class="icon">
+                      <i class="bi bi-lightbulb"></i>
+                    </div>
+                    <h4>Innovative Solutions</h4>
+                    <p>We deliver innovative solutions by combining legal expertise with modern technology and strategic insight.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="feature-item">
+                    <div class="icon">
+                      <i class="bi bi-people"></i>
+                    </div>
+                    <h4>Expert Team</h4>
+                    <p>Our expert team brings together seasoned legal professionals with deep industry knowledge and a commitment to excellence. </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="feature-item">
+                    <div class="icon">
+                      <i class="bi bi-trophy"></i>
+                    </div>
+                    <h4>Proven Results</h4>
+                    <p>Clients trust us for our reliability, clarity, and results that drive real growth.
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="cta-button">
+                <a href="#about" class="btn btn-primary">Learn More About Us</a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Work Process Section -->
+    <!-- <section id="work-process" class="work-process section"> -->
+
+      <!-- Section Title -->
+      <!-- <div class="container section-title" data-aos="fade-up">
+        <h2>Our Consulting Process</h2>
+        <div><span>Check</span> <span class="description-title">Our Consulting Process</span></div>
+      </div>End Section Title -->
+
+      <!-- <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="steps-content">
+              <h2>Our Proven Consulting Process</h2>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+              <div class="steps-cta">
+                <a href="#contact" class="btn btn-primary">Start Your Project</a>
+                <a href="#about" class="btn btn-outline">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="300">
+            <div class="steps-list">
+              <div class="step-item">
+                <div class="step-number">01</div>
+                <div class="step-content">
+                  <h3>Discovery &amp; Analysis</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                </div>
+              </div>
+
+              <div class="step-item">
+                <div class="step-number">02</div>
+                <div class="step-content">
+                  <h3>Strategy Development</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                </div>
+              </div>
+
+              <div class="step-item">
+                <div class="step-number">03</div>
+                <div class="step-content">
+                  <h3>Implementation</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                </div>
+              </div>
+
+              <div class="step-item">
+                <div class="step-number">04</div>
+                <div class="step-content">
+                  <h3>Monitoring &amp; Optimization</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                </div>
+              </div>
+
+              <div class="step-item">
+                <div class="step-number">05</div>
+                <div class="step-content">
+                  <h3>Evaluation &amp; Reporting</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>/Work Process Section -->
+
+    <!-- Services Section -->
+    <section id="Practice Areas" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Practice Areas</h2>
+        <div><span>Check Our</span> <span class="description-title">Practice Areas</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card">
+              <div class="icon-box">
+                <i class="bi bi-briefcase"></i>
+              </div>
+              <h3>Commercial Law</h3>
+              <p>Expert representation in commercial recovery suits, ensuring swift and effective
+                money recovery.</p>
+              <!-- <ul class="service-features">
+                <li><i class="bi bi-check-circle"></i> Market Analysis</li>
+                <li><i class="bi bi-check-circle"></i> Competitive Positioning</li>
+                <li><i class="bi bi-check-circle"></i> Growth Strategies</li>
+              </ul>
+              <a href="service-details.html" class="read-more">Learn More <i class="bi bi-arrow-right"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card">
+              <div class="icon-box">
+                <i class="bi bi-file-earmark-text"></i>
+              </div>
+              <h3>Civil Law</h3>
+              <p>Handling diverse civil litigation cases, including civil writs, appeals, and Special Leave Petitions (SLPs) across various courts.</p>
+              <!-- <ul class="service-features">
+                <li><i class="bi bi-check-circle"></i> Process Optimization</li>
+                <li><i class="bi bi-check-circle"></i> Organizational Change</li>
+                <li><i class="bi bi-check-circle"></i> Digital Transformation</li>
+              </ul>
+              <a href="service-details.html" class="read-more">Learn More <i class="bi bi-arrow-right"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-card">
+              <div class="icon-box">
+                <i class="bi bi-shield"></i>
+              </div>
+              <h3>Service Matters (CAT)</h3>
+              <p>Specialized legal services for cases in the Central Administrative Tribunal, addressing grievances of public servants</p>
+              <!-- <ul class="service-features">
+                <li><i class="bi bi-check-circle"></i> Financial Analysis</li>
+                <li><i class="bi bi-check-circle"></i> Investment Planning</li>
+                <li><i class="bi bi-check-circle"></i> Risk Management</li>
+              </ul>
+              <a href="service-details.html" class="read-more">Learn More <i class="bi bi-arrow-right"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-card">
+              <div class="icon-box">
+                <i class="bi bi-people"></i>
+              </div>
+              <h3>Labour Law & Employment Law</h3>
+              <p>Representation in Labour Law disputes and employment-related cases, offering expert advice on employment contracts, workplace disputes.</p>
+              <!-- <ul class="service-features">
+                <li><i class="bi bi-check-circle"></i> Talent Acquisition</li>
+                <li><i class="bi bi-check-circle"></i> Performance Management</li>
+                <li><i class="bi bi-check-circle"></i> Leadership Development</li>
+              </ul>
+              <a href="service-details.html" class="read-more">Learn More <i class="bi bi-arrow-right"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-card">
+              <div class="icon-box">
+                <i class="bi bi-mortarboard"></i>
+              </div>
+              <h3>Writs</h3>
+              <p>Expertise in filing and defending writ petitions in high courts and the Supreme Court, protecting your fundamental rights.</p>
+              <!-- <ul class="service-features">
+                <li><i class="bi bi-check-circle"></i> IT Strategy</li>
+                <li><i class="bi bi-check-circle"></i> System Implementation</li>
+                <li><i class="bi bi-check-circle"></i> Cybersecurity</li>
+              </ul>
+              <a href="service-details.html" class="read-more">Learn More <i class="bi bi-arrow-right"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+            <div class="service-card">
+              <div class="icon-box">
+                <i class="bi bi-file-earmark-text"></i>
+              </div>
+              <h3>Criminal Law</h3>
+              <p>Robust defense and prosecution services in criminal cases, safeguarding your rights through all stages of the criminal justice process.</p>
+              <!-- <ul class="service-features">
+                <li><i class="bi bi-check-circle"></i> Brand Development</li>
+                <li><i class="bi bi-check-circle"></i> Digital Marketing</li>
+                <li><i class="bi bi-check-circle"></i> Market Research</li>
+              </ul>
+              <a href="service-details.html" class="read-more">Learn More <i class="bi bi-arrow-right"></i></a> -->
+            </div>
+          </div>
+        </div>
+
+      
+
+        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="800">
+          <a href="#contact" class="btn btn-primary">Request a Consultation</a>
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="why-choose-us section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Why Choose Us</h2>
+        <div><span>Why Choose</span> <span class="description-title">Our Services</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="features-content">
+              <h2>Why Choose Our Consulting Services</h2>
+              <!-- <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p> -->
+
+              <div class="features-list">
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <i class="bi bi-person-check"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h4> Client-Focused Approach</h4>
+                    <p>At our firm, you're more than just a case number. We take the time to understand your unique situation and tailor our legal strategies to achieve the best possible outcome for you.</p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <i class="bi bi-people"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h4> Experienced Legal Team</h4>
+                    <p>Our attorneys bring years of experience across a range of practice areas, from corporate law to family and criminal matters. We combine deep legal knowledge with practical insight to protect your interests.</p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <i class="bi bi-check-circle"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h4>Proven Results</h4>
+                    <p>We have a strong track record of success, whether it’s winning cases in court, negotiating favorable settlements, or helping clients navigate complex legal issues with confidence.</p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <i class="bi bi-chat-dots"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h4>Transparent Communication</h4>
+                    <p>We believe in clear, honest, and consistent communication. You'll always know where your case stands and what to expect next — no surprises.</p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <i class="bi bi-cash"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h4>Cost-Effective Solutions</h4>
+                    <p>Legal services shouldn’t come with uncertainty about costs. We offer transparent billing and practical legal solutions to ensure you get real value from our services.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="features-image">
+              <div class="stats-card">
+                <div class="stat-item">
+                  <h3><span data-purecounter-start="0" data-purecounter-end="99" data-purecounter-duration="1" class="purecounter"></span>%</h3>
+                  <p>Client Satisfaction</p>
+                </div>
+                <div class="stat-item">
+                  <h3><span data-purecounter-start="0" data-purecounter-end="250" data-purecounter-duration="1" class="purecounter"></span>+</h3>
+                  <p>Projects Completed</p>
+                </div>
+                <div class="stat-item">
+                  <h3><span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1" class="purecounter"></span>+</h3>
+                  <p>Industry Awards</p>
+                </div>
+                <div class="stat-item">
+                  <h3><span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>+</h3>
+                  <p>Countries Served</p>
+                </div>
+              </div>
+              <img src="assets/img/about/law2.jpg" alt="" class="img-fluid main-image">
+              <div class="experience-badge">
+                <div class="badge-content">
+                  <span class="number">5+</span>
+                  <span class="text">Years of Excellence</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Why Choose Us Section -->
+
+    <!-- Team Section -->
+    <!-- <section id="team" class="team section"> -->
+      <!-- Section Title -->
+      <!-- <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <div><span>Check Our</span> <span class="description-title">Expert Team</span></div>
+      </div>End Section Title -->
+
+      <!-- <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="team-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 800,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": 1,
+              "spaceBetween": 30,
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
+              "breakpoints": {
+                "576": {
+                  "slidesPerView": 2
+                },
+                "992": {
+                  "slidesPerView": 3
+                },
+                "1200": {
+                  "slidesPerView": 4
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="team-card">
+                <div class="team-image">
+                  <img src="assets/img/person/person-m-3.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="team-overlay">
+                    <div class="social-links">
+                      <a href="#"><i class="bi bi-twitter-x"></i></a>
+                      <a href="#"><i class="bi bi-facebook"></i></a>
+                      <a href="#"><i class="bi bi-instagram"></i></a>
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="team-content">
+                  <h3>Marcus Wilson</h3>
+                  <span>Chief Technology Officer</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+                </div>
+              </div>
+             </div>End slide item --> 
+
+            <!-- <div class="swiper-slide">
+              <div class="team-card">
+                <div class="team-image">
+                  <img src="assets/img/person/person-f-5.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="team-overlay">
+                    <div class="social-links">
+                      <a href="#"><i class="bi bi-twitter-x"></i></a>
+                      <a href="#"><i class="bi bi-facebook"></i></a>
+                      <a href="#"><i class="bi bi-instagram"></i></a>
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="team-content">
+                  <h3>Sophia Reynolds</h3>
+                  <span>Product Designer</span>
+                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+              </div>
+            </div>End slide item -->
+
+            <!-- <div class="swiper-slide">
+              <div class="team-card">
+                <div class="team-image">
+                  <img src="assets/img/person/person-m-8.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="team-overlay">
+                    <div class="social-links">
+                      <a href="#"><i class="bi bi-twitter-x"></i></a>
+                      <a href="#"><i class="bi bi-facebook"></i></a>
+                      <a href="#"><i class="bi bi-instagram"></i></a>
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="team-content">
+                  <h3>Daniel Chen</h3>
+                  <span>Marketing Specialist</span>
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+            </div>End slide item --> 
+
+            <!-- <div class="swiper-slide">
+              <div class="team-card">
+                <div class="team-image">
+                  <img src="assets/img/person/person-f-9.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="team-overlay">
+                    <div class="social-links">
+                      <a href="#"><i class="bi bi-twitter-x"></i></a>
+                      <a href="#"><i class="bi bi-facebook"></i></a>
+                      <a href="#"><i class="bi bi-instagram"></i></a>
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="team-content">
+                  <h3>Olivia Thompson</h3>
+                  <span>Lead Developer</span>
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                </div>
+              </div>End Team Card -->
+            <!-- </div>End slide item --> 
+<!-- 
+            <div class="swiper-slide">
+              <div class="team-card">
+                <div class="team-image">
+                  <img src="assets/img/person/person-m-12.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="team-overlay">
+                    <div class="social-links">
+                      <a href="#"><i class="bi bi-twitter-x"></i></a>
+                      <a href="#"><i class="bi bi-facebook"></i></a>
+                      <a href="#"><i class="bi bi-instagram"></i></a>
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="team-content">
+                  <h3>Jason Parker</h3>
+                  <span>UI/UX Designer</span>
+                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</p>
+                </div>
+              </div>
+            </div>End slide item --> 
+
+          <!-- </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div> -->
+
+      <!-- </div>
+
+    </section>/Team Section -->
+
+  
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Contact</h2>
+        <div><span>Contact</span> <span class="description-title">Us</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="contact-info">
+              <div class="contact-card">
+                <h3>Contact Information</h3>
+                <p>Feel free to reach out with any questions about the book, speaking engagements, or media inquiries.</p>
+
+                <div class="contact-details">
+                  <div class="contact-item">
+                    <i class="bi bi-envelope"></i>
+                    <div>
+                      <h4>Email:</h4>
+                      <p>lexnco@gmail.com</p>
+                    </div>
+                  </div>
+
+                  <div class="contact-item">
+                    <i class="bi bi-telephone"></i>
+                    <div>
+                      <h4>Phone:</h4>
+                      <p>+91 7510150037</p>
+                    </div>
+                  </div>
+
+                  <div class="contact-item">
+                    <i class="bi bi-geo-alt"></i>
+                    <div>
+                      <h4>Address:</h4>
+                      <p>LEXNCO 
+                         Puthur, kottakkal 
+                         676505 Kerala 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="social-links">
+                  <a href="https://x.com/adv_safvan?s=11"><i class="bi bi-twitter"></i></a>
+                  <a href="https://www.facebook.com/share/1Dr13gecTz/?mibextid=wwXIfr"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/lexnco.law?igsh=MXFza2pkMXk2NXBs&utm_source=qr"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/adv-safvan-mohammed-716692370?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form id="contactForm" action="https://formsubmit.co/lexnco@gmail.com" method="POST" class="space-y-4">
+            <!-- Hide bot field -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="box">
+            <input type="hidden" name="_autoresponse" value="Thank you! We'll get back to you soon.">
+          
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
+              <input type="text" id="name" name="name" required placeholder="Safvan"
+                     class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 p-2">
+            </div>
+          
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700">Your Email</label>
+              <input type="email" id="email" name="email" required placeholder="safvan@example.com"
+                     class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 p-2">
+            </div>
+          
+            <div>
+              <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+              <input type="text" id="subject" name="subject" required placeholder="I want your consulting!"
+                     class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 p-2">
+            </div>
+          
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Your message here..."
+                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 p-2"></textarea>
+            </div>
+          
+            <div class="text-center">
+              <button type="submit"
+                      class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                Send Message
+              </button>
+            </div>
+          </form>
+          
+          
+          <script>
+            document.getElementById('contactForm').addEventListener('submit', function (e) {
+              e.preventDefault(); // prevent page reload
+          
+              const loading = document.querySelector('.loading');
+              const sentMsg = document.querySelector('.sent-message');
+              const errorMsg = document.querySelector('.error-message');
+          
+              loading.style.display = 'block';
+              sentMsg.style.display = 'none';
+              errorMsg.textContent = '';
+          
+              const formData = new FormData(this);
+          
+              fetch('forms/contact.php', {
+                method: 'POST',
+                body: formData
+              })
+              .then(response => {
+                loading.style.display = 'none';
+                if (response.ok) {
+                  sentMsg.style.display = 'block';
+                  this.reset();
+                } else {
+                  return response.text().then(text => { throw new Error(text); });
+                }
+              })
+              .catch(error => {
+                loading.style.display = 'none';
+                errorMsg.textContent = error.message || "Something went wrong. Please try again.";
+              });
+            });
+          </script>
+          
+          <div class="my-3 text-center">
+            <div id="loading" class="text-gray-500 hidden">Loading...</div>
+            <div id="success" class="text-green-600 hidden">✅ Message sent successfully!</div>
+            <div id="error" class="text-red-600 hidden">❌ Failed to send message.</div>
+          </div>
+          
+          <script>
+            const form = document.getElementById('contactForm');
+            const loading = document.getElementById('loading');
+            const success = document.getElementById('success');
+            const error = document.getElementById('error');
+          
+            form.addEventListener('submit', function (e) {
+              loading.classList.remove('hidden');
+              success.classList.add('hidden');
+              error.classList.add('hidden');
+          
+              // Allow formSubmit to continue
+              setTimeout(() => {
+                loading.classList.add('hidden');
+                success.classList.remove('hidden');
+                form.reset();
+              }, 2000);
+            });
+          </script>
+          
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div class="address">
+            <h4>Address</h4>
+            <p>LEXNCO </p>
+            <p>Puthur, kottakkal 
+              676505 Kerala 
+            </p>
+            <p></p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Contact</h4>
+            <p>
+              <strong>Phone:</strong> <span>+91 7510150037</span><br>
+              <strong>Email:</strong> <span>lexnco@gmail.com</span><br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4>Opening Hours</h4>
+            <p>
+              <strong>Mon-Sat:</strong> <span>9AM - 6PM</span><br>
+              <strong>Sunday</strong>: <span>Closed</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="https://x.com/adv_safvan?s=11" class="twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/share/1Dr13gecTz/?mibextid=wwXIfr" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/lexnco.law?igsh=MXFza2pkMXk2NXBs&utm_source=qr" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/adv-safvan-mohammed-716692370?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app " class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">lexnco.</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="#">AF</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
