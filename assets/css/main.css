@@ -411,31 +411,31 @@ body {
   }
 }
 .animate-on-scroll {
-    opacity: 0;
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  }
-  
-  .animate-on-scroll.in-view {
-    opacity: 1;
-  }
-  
-  /* Triggered animations */
-  .fadeInLeft.in-view {
-    animation: fadeInLeft 0.8s forwards;
-  }
-  
-  .fadeInRight.in-view {
-    animation: fadeInRight 0.8s forwards;
-  }
-  
-  .fadeInUp.in-view {
-    animation: fadeInUp 0.8s forwards;
-  }
-  
-  .bounceIn.in-view {
-    animation: bounceIn 1s forwards;
-  }
-  
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate-on-scroll.in-view {
+  opacity: 1;
+}
+
+/* Triggered animations */
+.fadeInLeft.in-view {
+  animation: fadeInLeft 0.8s forwards;
+}
+
+.fadeInRight.in-view {
+  animation: fadeInRight 0.8s forwards;
+}
+
+.fadeInUp.in-view {
+  animation: fadeInUp 0.8s forwards;
+}
+
+.bounceIn.in-view {
+  animation: bounceIn 1s forwards;
+}
+
 @keyframes fadeInLeft {
   from {
     opacity: 0;
@@ -548,6 +548,9 @@ body {
 
 .fade-in-up {
   opacity: 0;
+}
+
+.animate-on-scroll.in-view.fade-in-up {
   animation: fadeUp 0.8s ease-out forwards;
 }
 
