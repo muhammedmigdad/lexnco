@@ -67,4 +67,22 @@ document.addEventListener("DOMContentLoaded", function () {
       this.style.boxShadow = "none";
     });
   });
+  const observer2 = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const animation = el.getAttribute("data-animation") || "fadeInUp";
+          el.classList.add("in-view", animation);
+          observer.unobserve(el);
+        }
+      });
+    },
+    {
+      threshold: 0.2,
+    }
+  );
+
+  const elements = document.querySelectorAll(".animate-on-scroll");
+  elements.forEach((el) => observer2.observe(el));
 });

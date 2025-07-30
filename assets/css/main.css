@@ -316,7 +316,6 @@ body {
 .about-image-wrapper {
   position: relative;
   flex: 1;
-  animation: fadeInLeft 0.8s ease-in-out;
 }
 
 .about-main-img {
@@ -340,7 +339,6 @@ body {
   color: #000;
   font-weight: bold;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  animation: bounceIn 1s ease;
 }
 
 .experience-years {
@@ -355,7 +353,6 @@ body {
 /* Content */
 .about-content {
   flex: 1;
-  animation: fadeInRight 0.8s ease-in-out;
 }
 
 .about-title {
@@ -389,7 +386,6 @@ body {
   padding: 1.5rem;
   border-radius: 10px;
   transition: transform 0.3s ease, background-color 0.3s ease;
-  animation: fadeInUp 0.8s ease-in-out;
 }
 
 .feature-card:hover {
@@ -414,6 +410,32 @@ body {
     font-size: 2.5rem;
   }
 }
+.animate-on-scroll {
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .animate-on-scroll.in-view {
+    opacity: 1;
+  }
+  
+  /* Triggered animations */
+  .fadeInLeft.in-view {
+    animation: fadeInLeft 0.8s forwards;
+  }
+  
+  .fadeInRight.in-view {
+    animation: fadeInRight 0.8s forwards;
+  }
+  
+  .fadeInUp.in-view {
+    animation: fadeInUp 0.8s forwards;
+  }
+  
+  .bounceIn.in-view {
+    animation: bounceIn 1s forwards;
+  }
+  
 @keyframes fadeInLeft {
   from {
     opacity: 0;
