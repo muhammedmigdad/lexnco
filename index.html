@@ -19,11 +19,11 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -38,30 +38,28 @@
 </head>
 
 <body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">LEXNCO</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo-wrapper">
+        <!-- You can uncomment the image logo if needed -->
+        <!-- <img src="assets/img/logo.webp" alt="LEXNCO Logo" class="logo-img" /> -->
+        <h1 class="site-name">LEXNCO</h1>
+      </div>
+  
+      <nav class="main-nav">
+        <ul class="nav-links">
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#Practice Areas">Practice Areas</a></li>
+          <li><a href="#practice-areas">Practice Areas</a></li>
           <li><a href="#why-choose-us">Why Choose Us</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <button class="mobile-nav-toggle" id="nav-toggle">&#9776;</button>
       </nav>
-
-      <a class="btn-getstarted" href="#contact">contact us</a>
-
+  
+      <a href="#contact" class="btn-contact">Contact Us</a>
     </div>
   </header>
+  
 
   <main class="main">
 
@@ -229,80 +227,6 @@
 
     </section><!-- /About Section -->
 
-    <!-- Work Process Section -->
-    <!-- <section id="work-process" class="work-process section"> -->
-
-      <!-- Section Title -->
-      <!-- <div class="container section-title" data-aos="fade-up">
-        <h2>Our Consulting Process</h2>
-        <div><span>Check</span> <span class="description-title">Our Consulting Process</span></div>
-      </div>End Section Title -->
-
-      <!-- <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="steps-content">
-              <h2>Our Proven Consulting Process</h2>
-              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-              <div class="steps-cta">
-                <a href="#contact" class="btn btn-primary">Start Your Project</a>
-                <a href="#about" class="btn btn-outline">Learn More</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="300">
-            <div class="steps-list">
-              <div class="step-item">
-                <div class="step-number">01</div>
-                <div class="step-content">
-                  <h3>Discovery &amp; Analysis</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                </div>
-              </div>
-
-              <div class="step-item">
-                <div class="step-number">02</div>
-                <div class="step-content">
-                  <h3>Strategy Development</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                </div>
-              </div>
-
-              <div class="step-item">
-                <div class="step-number">03</div>
-                <div class="step-content">
-                  <h3>Implementation</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                </div>
-              </div>
-
-              <div class="step-item">
-                <div class="step-number">04</div>
-                <div class="step-content">
-                  <h3>Monitoring &amp; Optimization</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                </div>
-              </div>
-
-              <div class="step-item">
-                <div class="step-number">05</div>
-                <div class="step-content">
-                  <h3>Evaluation &amp; Reporting</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section>/Work Process Section -->
-
     <!-- Services Section -->
     <section id="Practice Areas" class="services section">
 
@@ -371,13 +295,7 @@
               </div>
               <h3>Labour Law & Employment Law</h3>
               <p>Representation in Labour Law disputes and employment-related cases, offering expert advice on employment contracts, workplace disputes.</p>
-              <!-- <ul class="service-features">
-                <li><i class="bi bi-check-circle"></i> Talent Acquisition</li>
-                <li><i class="bi bi-check-circle"></i> Performance Management</li>
-                <li><i class="bi bi-check-circle"></i> Leadership Development</li>
-              </ul>
-              <a href="service-details.html" class="read-more">Learn More <i class="bi bi-arrow-right"></i></a> -->
-            </div>
+              </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
@@ -387,13 +305,7 @@
               </div>
               <h3>Writs</h3>
               <p>Expertise in filing and defending writ petitions in high courts and the Supreme Court, protecting your fundamental rights.</p>
-              <!-- <ul class="service-features">
-                <li><i class="bi bi-check-circle"></i> IT Strategy</li>
-                <li><i class="bi bi-check-circle"></i> System Implementation</li>
-                <li><i class="bi bi-check-circle"></i> Cybersecurity</li>
-              </ul>
-              <a href="service-details.html" class="read-more">Learn More <i class="bi bi-arrow-right"></i></a> -->
-            </div>
+              </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
@@ -403,12 +315,7 @@
               </div>
               <h3>Criminal Law</h3>
               <p>Robust defense and prosecution services in criminal cases, safeguarding your rights through all stages of the criminal justice process.</p>
-              <!-- <ul class="service-features">
-                <li><i class="bi bi-check-circle"></i> Brand Development</li>
-                <li><i class="bi bi-check-circle"></i> Digital Marketing</li>
-                <li><i class="bi bi-check-circle"></i> Market Research</li>
-              </ul>
-              <a href="service-details.html" class="read-more">Learn More <i class="bi bi-arrow-right"></i></a> -->
+              
             </div>
           </div>
         </div>
@@ -531,166 +438,6 @@
       </div>
 
     </section><!-- /Why Choose Us Section -->
-
-    <!-- Team Section -->
-    <!-- <section id="team" class="team section"> -->
-      <!-- Section Title -->
-      <!-- <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <div><span>Check Our</span> <span class="description-title">Expert Team</span></div>
-      </div>End Section Title -->
-
-      <!-- <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="team-slider swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 800,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": 1,
-              "spaceBetween": 30,
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "navigation": {
-                "nextEl": ".swiper-button-next",
-                "prevEl": ".swiper-button-prev"
-              },
-              "breakpoints": {
-                "576": {
-                  "slidesPerView": 2
-                },
-                "992": {
-                  "slidesPerView": 3
-                },
-                "1200": {
-                  "slidesPerView": 4
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="team-card">
-                <div class="team-image">
-                  <img src="assets/img/person/person-m-3.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="team-overlay">
-                    <div class="social-links">
-                      <a href="#"><i class="bi bi-twitter-x"></i></a>
-                      <a href="#"><i class="bi bi-facebook"></i></a>
-                      <a href="#"><i class="bi bi-instagram"></i></a>
-                      <a href="#"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="team-content">
-                  <h3>Marcus Wilson</h3>
-                  <span>Chief Technology Officer</span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
-                </div>
-              </div>
-             </div>End slide item --> 
-
-            <!-- <div class="swiper-slide">
-              <div class="team-card">
-                <div class="team-image">
-                  <img src="assets/img/person/person-f-5.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="team-overlay">
-                    <div class="social-links">
-                      <a href="#"><i class="bi bi-twitter-x"></i></a>
-                      <a href="#"><i class="bi bi-facebook"></i></a>
-                      <a href="#"><i class="bi bi-instagram"></i></a>
-                      <a href="#"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="team-content">
-                  <h3>Sophia Reynolds</h3>
-                  <span>Product Designer</span>
-                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                </div>
-              </div>
-            </div>End slide item -->
-
-            <!-- <div class="swiper-slide">
-              <div class="team-card">
-                <div class="team-image">
-                  <img src="assets/img/person/person-m-8.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="team-overlay">
-                    <div class="social-links">
-                      <a href="#"><i class="bi bi-twitter-x"></i></a>
-                      <a href="#"><i class="bi bi-facebook"></i></a>
-                      <a href="#"><i class="bi bi-instagram"></i></a>
-                      <a href="#"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="team-content">
-                  <h3>Daniel Chen</h3>
-                  <span>Marketing Specialist</span>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-              </div>
-            </div>End slide item --> 
-
-            <!-- <div class="swiper-slide">
-              <div class="team-card">
-                <div class="team-image">
-                  <img src="assets/img/person/person-f-9.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="team-overlay">
-                    <div class="social-links">
-                      <a href="#"><i class="bi bi-twitter-x"></i></a>
-                      <a href="#"><i class="bi bi-facebook"></i></a>
-                      <a href="#"><i class="bi bi-instagram"></i></a>
-                      <a href="#"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="team-content">
-                  <h3>Olivia Thompson</h3>
-                  <span>Lead Developer</span>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                </div>
-              </div>End Team Card -->
-            <!-- </div>End slide item --> 
-<!-- 
-            <div class="swiper-slide">
-              <div class="team-card">
-                <div class="team-image">
-                  <img src="assets/img/person/person-m-12.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="team-overlay">
-                    <div class="social-links">
-                      <a href="#"><i class="bi bi-twitter-x"></i></a>
-                      <a href="#"><i class="bi bi-facebook"></i></a>
-                      <a href="#"><i class="bi bi-instagram"></i></a>
-                      <a href="#"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="team-content">
-                  <h3>Jason Parker</h3>
-                  <span>UI/UX Designer</span>
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</p>
-                </div>
-              </div>
-            </div>End slide item --> 
-
-          <!-- </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div> -->
-
-      <!-- </div>
-
-    </section>/Team Section -->
-
   
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -818,6 +565,7 @@
                 errorMsg.textContent = error.message || "Something went wrong. Please try again.";
               });
             });
+            
           </script>
           
           <div class="my-3 text-center">
@@ -925,7 +673,15 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+     const toggleBtn = document.getElementById("nav-toggle");
+  const navLinks = document.querySelector(".nav-links");
 
+  toggleBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+  </script>
+  
 </body>
 
 </html>
