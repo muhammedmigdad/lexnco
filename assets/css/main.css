@@ -580,15 +580,19 @@ body {
 }
 
 /* Why choose us section */
-.animate-fade-in-up {
+.animate-on-scroll {
+  opacity: 0;
+}
+
+.animate-on-scroll.in-view.animate-fade-in-up {
   animation: fadeInUp 0.8s ease-out both;
 }
 
-.animate-slide-in-left {
+.animate-on-scroll.in-view.animate-slide-in-left {
   animation: slideInLeft 0.8s ease-out both;
 }
 
-.animate-zoom-in {
+.animate-on-scroll.in-view.animate-zoom-in {
   animation: zoomIn 1s ease-out both;
 }
 

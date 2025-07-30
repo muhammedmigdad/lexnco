@@ -102,4 +102,20 @@ document.addEventListener("DOMContentLoaded", function () {
   document
     .querySelectorAll(".animate-on-scroll")
     .forEach((el) => observer3.observe(el));
+  const observer4 = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+        }
+      });
+    },
+    {
+      threshold: 0.15,
+    }
+  );
+
+  document
+    .querySelectorAll(".animate-on-scroll")
+    .forEach((el) => observer4.observe(el));
 });
